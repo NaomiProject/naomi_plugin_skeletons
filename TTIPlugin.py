@@ -29,13 +29,14 @@ class MyTTIPlugin(plugin.TTIPlugin):
         # ...
         # return the result as an intentresult structure
         intentresult = {
-            'action': selected_intent.action,
-            'input': phrase,
-            'intent': selected_intent.name,
-            'matches': {
-                'match1': ['value1'],
-                'match2': ['value2']
-            },
-            'score': score
+            selected_intent_name: {
+                'action': selected_intent.action,
+                'input': phrase,
+                'matches': {
+                    'match1': ['value1'],
+                    'match2': ['value2']
+                },
+                'score': score
+            }
         }
         return intentresult
