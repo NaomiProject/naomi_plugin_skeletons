@@ -24,9 +24,9 @@ class MySpeechHandler(plugin.SpeechHandlerPlugin):
                             'ACTIVATE PLUGIN'
                         ]
                     }
-                }
-            },
-            'action': self.handle
+                },
+                'action': self.handle
+            }
         }
 
     # The handle method is where you pick up after Naomi has
